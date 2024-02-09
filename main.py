@@ -337,7 +337,21 @@ def menu_cliente(usuario_logado):
                     print(f"{produto[0]} - {produto[1]} Unidades ")
 
             if escolha_compra == 4:
-
+                
+                cursor_produtos.execute("SELECT nome FROM infos")
+                for produto in cursor_produtos.fetchall():
+                    for produto_carrinho in carrinho:
+                        if produto == produto_carrinho[0]:
+                            
+                            produtos = cursor_produtos.execute("SELECT * FROM infos")
+                            for produto in produtos:
+                                if produto[0] == produto_carrinho[0]:
+                                    disponiveis = produto[2]
+                            novo_disponivel = disponiveis + produto_carrinho[1]
+                
+                        cursor_produtos.execute("UPDATE infos SET quantidade = "'+str(novo_disponivel+'" WHERE nome = "'+produto+'")")
+                
+                
                 print('Carrinho limpado!')
                 preco_total = 0
                 carrinho = []
