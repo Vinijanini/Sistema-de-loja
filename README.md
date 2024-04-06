@@ -1,31 +1,23 @@
-Descrição do Projeto:
-Este projeto consiste em um sistema de loja virtual com funcionalidades tanto para clientes quanto para administradores. O sistema utiliza um banco de dados SQLite para armazenar informações sobre produtos, usuários e vendas. Os usuários podem se cadastrar, fazer login, visualizar produtos, realizar compras e consultar suas compras anteriores. Os administradores têm acesso a funcionalidades adicionais, como cadastrar produtos, alterar preços, gerenciar estoque e visualizar pedidos.
+Sistema de Gestão de Lojas de Lojas
 
-Funcionalidades Principais:
+Este programa foi desenvolvido para gerenciar uma loja, permitindo operações de administração, compras de clientes e acompanhamento de vendas.
 
-1. Banco de Dados:
-O sistema utiliza um banco de dados SQLite para armazenar informações sobre produtos, usuários e vendas.
+De Uso:
 
-2. Menu Principal:
-- Acessar Loja (Cliente): Permite que os clientes façam login para acessar funcionalidades como ver produtos, realizar compras e visualizar histórico de compras.
-- Registrar (Cliente): Permite que novos usuários se registrem no sistema.
-- Entrar como ADM (Administrador): Permite que administradores acessem funcionalidades exclusivas.
+    Ao iniciar o programa, você será apresentado ao menu principal.
+    Selecione a opção desejada:
+        Acessar loja: Para entrar como cliente e realizar compras.
+        Registrar: Para criar uma nova conta de cliente.
+        Entrar como ADM: Para acessar o painel de administração da loja.
+        Sair: Para encerrar o programa.
+    Se acessar como cliente:
+        Você poderá ver os produtos disponíveis, realizar compras e visualizar seu histórico de compras.
+    Se acessar como ADM:
+        Você terá acesso a várias operações de administração, incluindo cadastro de produtos, alteração de preços, acompanhamento de pedidos e outras funcionalidades.
+    Ao sair, o programa será encerrado.
 
-3. Menu do Cliente:
-- Ver Produtos: Lista os produtos disponíveis na loja.
-- Realizar Compra: Permite que o cliente adicione produtos ao carrinho, visualize o carrinho, remova produtos e finalize a compra.
-- Minhas Compras: Permite que o cliente visualize seu histórico de compras.
-- Sair: Encerra a sessão do cliente.
+Observações:
 
-4. Menu do Administrador:
-- Cadastrar Produto: Adiciona novos produtos ao estoque.
-- Ver Produtos: Lista os produtos disponíveis na loja.
-- Alterar Preço: Permite que o administrador altere o preço de um produto específico.
-- Excluir Produto: Remove um produto do estoque.
-- Alterar Quantidade: Atualiza a quantidade disponível de um produto.
-- Ver Pedidos: Exibe o histórico de pedidos realizados.
-- Sair: Encerra a sessão do administrador.
-
-Observações Importantes:
-O acesso como administrador requer uma senha específica: Az1310750412
-As senhas dos usuários são armazenadas no banco de dados sem criptografia, e este projeto é destinado apenas para fins educacionais.
+    Certifique-se de inserir informações válidas conforme solicitado.
+    Para garantir a segurança, mantenha suas credenciais de login em segredo.
+    Caso encontre algum problema ou tenha dúvidas, entre em contato com o suporte.
